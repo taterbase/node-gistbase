@@ -32,5 +32,7 @@ module.exports = {
 ```
 
 With mocha installed you should be able to run tests now.
+
 ---
+
 MIT License
