@@ -1,0 +1,38 @@
+{
+  "name": "gistbase",
+  "preferGlobal": "false",
+  "version": "0.0.1",
+  "author": "taterbase <taterbase@gmail.com>",
+  "description": "A noSQL database composed of gists",
+  "contributors": [
+    {
+      "name": "taterbase",
+      "email": "taterbase@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "./lib/gistbase",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taterbase/gistbase.git"
+  },
+  "keywords": [
+    "gist",
+    "gists",
+    "github",
+    "git",
+    "db",
+    "gb",
+    "gistdb",
+    "gistbase",
+    "database"
+  ],
+  "dependencies": {
+    "mocha": "~1.4.0",
+    "should": "~1.1.0",
+    "octoauth": "~0.0.2"
+  },
+  "license": "MIT"
+}

@@ -4,7 +4,7 @@ A noSQL database for Node.js composed of gists. This has a different structure t
 
 ##Testing
 
-gistbase relies on a config folder in the root (not stored in the repo) that holds a username and password for basic auth, as well as an access token for oauth. The structure is like so:
+gistbase relies on a config folder in the root (not stored in the repo) that holds a username and password for basic auth. The structure is like so:
 
 ```
 gistbase
@@ -26,8 +26,7 @@ Inside config/index.js you will need to export an object with a username, passwo
 ```javascript
 module.exports = {
   username: 'taterbase',
-  password: '123Fake',
-  access: '1MH34Tga79DdfahPbDzoX'
+  password: '123Fake'
 };
 ```
 
