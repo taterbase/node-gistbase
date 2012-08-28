@@ -19,7 +19,13 @@ describe('gistbase', function(){
           return done(err);
 
         var gb = new Gistbase({token: token});
-        gb.getGists(done);
+
+        gb.on('ready', function(){
+          gb.destroy(done);
+        });
+
+        gb.on('error', done);
+
       });
     });
 
@@ -27,7 +33,31 @@ describe('gistbase', function(){
       this.timeout(3000);
 
       var gb = new Gistbase(config);
-      gb.getGists(done);
+
+      gb.on('ready', function(){
+        gb.destroy(done);
+      });
+
+      gb.on('err', done);
+    });
+  });
+
+  describe('setup', function(){
+
+
+    it("should create a new database if one is not provided", function(done){
+      this.timeout(3000);
+
+      var gb = new Gistbase(config);
+
+      gb.on('ready', function(result){
+        gb.should.have.property('id');
+        result.should.have.property('description');
+        
+        gb.destroy(done);
+      });
+
+      gb.on('error', done);
     });
   });
 });
