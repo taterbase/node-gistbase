@@ -1,7 +1,7 @@
 {
   "name": "gistbase",
   "preferGlobal": "false",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "author": "taterbase <taterbase@gmail.com>",
   "description": "A noSQL database composed of gists",
   "contributors": [
@@ -16,7 +16,7 @@
   "main": "./lib/gistbase",
   "repository": {
     "type": "git",
-    "url": "https://github.com/taterbase/gistbase.git"
+    "url": "https://github.com/taterbase/node-gistbase.git"
   },
   "keywords": [
     "gist",
